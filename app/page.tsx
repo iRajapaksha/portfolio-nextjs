@@ -9,6 +9,7 @@ import TextArea from "@/components/ui/TextArea";
 import Profile from "@/components/ui/Profile";
 import FancyButton from "@/components/ui/FancyButton";
 import LiveClock from "@/components/ui/LiveClock";
+import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -34,10 +35,10 @@ export default function Home() {
             <TextArea  placeholder="Full Name" />
             <TextArea  placeholder="Full Name" icon={<FaUser/>}/>
             <Profile/>
-            <div className="w-[350px]">
+            <MagneticWrapper className="w-[350px]">
             <FancyButton text="Connect" icon={<FaArrowRight/>}/>
             <LiveClock timezone="Colombo"/>
-            </div>
+            </MagneticWrapper>
           </Card>
           </div>
         </div>
