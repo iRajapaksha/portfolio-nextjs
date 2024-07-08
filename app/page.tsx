@@ -1,4 +1,5 @@
 "use client";
+import Card from "@/components/ui/Card";
 import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 
 export default function Home() {
@@ -10,8 +11,13 @@ export default function Home() {
       resolution={2048}
     >
       {(methods) => (
-        <div className="h-screen">
-          {/* You can now use methods provided by react-water-wave here */}
+        <div className="w-full p-10">
+          <div className="max-w-2xl mx-auto">
+
+          <Card title="UI components">
+            This is a Card
+          </Card>
+          </div>
         </div>
       )}
     </WaterWaveWrapper>
