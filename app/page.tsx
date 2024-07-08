@@ -6,6 +6,7 @@ import { GoHomeFill } from "react-icons/go";
 import { FaUser } from "react-icons/fa";
 import Input from "@/components/ui/Input";
 import TextArea from "@/components/ui/TextArea";
+import Profile from "@/components/ui/Profile";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -30,6 +31,7 @@ export default function Home() {
             <Input type="text" placeholder="Full Name" icon={<FaUser/>}/>
             <TextArea  placeholder="Full Name" />
             <TextArea  placeholder="Full Name" icon={<FaUser/>}/>
+            <Profile/>
           </Card>
           </div>
         </div>
