@@ -1,7 +1,9 @@
 "use client";
+import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
-
+import { GoHomeFill } from "react-icons/go";
+import { FaUser } from "react-icons/fa";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -15,7 +17,12 @@ export default function Home() {
           <div className="max-w-2xl mx-auto">
 
           <Card title="UI components">
-            This is a Card
+            <div className="grid grid-cols-4">
+              <Button>basic button</Button>
+              <Button><GoHomeFill/> button</Button>
+              <Button isIcon><FaUser/></Button>
+              <Button link="https://www.google.com">google</Button>
+            </div>
           </Card>
           </div>
         </div>
