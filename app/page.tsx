@@ -3,10 +3,11 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 import { GoHomeFill } from "react-icons/go";
-import { FaUser } from "react-icons/fa";
+import { FaArrowRight, FaUser } from "react-icons/fa";
 import Input from "@/components/ui/Input";
 import TextArea from "@/components/ui/TextArea";
 import Profile from "@/components/ui/Profile";
+import FancyButton from "@/components/ui/FancyButton";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -32,6 +33,10 @@ export default function Home() {
             <TextArea  placeholder="Full Name" />
             <TextArea  placeholder="Full Name" icon={<FaUser/>}/>
             <Profile/>
+            <div className="w-[350px]">
+            <FancyButton text="Connect" icon={<FaArrowRight/>}/>
+
+            </div>
           </Card>
           </div>
         </div>
