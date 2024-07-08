@@ -8,6 +8,7 @@ import Input from "@/components/ui/Input";
 import TextArea from "@/components/ui/TextArea";
 import Profile from "@/components/ui/Profile";
 import FancyButton from "@/components/ui/FancyButton";
+import LiveClock from "@/components/ui/LiveClock";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -35,7 +36,7 @@ export default function Home() {
             <Profile/>
             <div className="w-[350px]">
             <FancyButton text="Connect" icon={<FaArrowRight/>}/>
-
+            <LiveClock timezone="Colombo"/>
             </div>
           </Card>
           </div>
