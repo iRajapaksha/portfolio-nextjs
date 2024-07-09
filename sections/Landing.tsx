@@ -21,7 +21,7 @@ function LandingSection() {
       </div>
       {/**Slogan */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-10 leading-[14vw] lg:leading-[10vw] 2xl:leading-[9rem] font-medium h-[40rem] tracking-[-0.3rem] " >
-      <div className="flex flex-col justify-center items-center text-primary-foreground  text-[18vw] lg:text-[14vw] 2xl:text-[12rem] uppercase">
+      <div className="flex flex-col justify-center items-center text-primary-foreground  text-[18vw] lg:text-[14vw] 2xl:text-[10rem] uppercase">
         <div>
           <span>Code</span>
         </div>
@@ -41,7 +41,7 @@ function LandingSection() {
       </div>
       </div>
       {/**Scroll down */}
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-[15rem] md:bottoom-[8rem] lg:-bottom-10">
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-[15rem] md:bottoom-[8rem] lg:bottom-10">
       <ScrollDown/>
       </div>
     </div>

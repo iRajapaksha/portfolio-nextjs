@@ -13,6 +13,7 @@ import MagneticWrapper from "@/components/visualEffects/magnetic-wrapper";
 import ScrollDown from "@/components/ui/ScrollDown";
 import Header from "@/components/navigation/header/Header";
 import LandingSection from "@/sections/Landing";
+import FeaturedSection from "@/sections/Featured";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -22,7 +23,8 @@ export default function Home() {
       resolution={2048}
     >
       {(methods) => (
-        <LandingSection/>
+        <FeaturedSection/>
+        // <LandingSection/>
         // <div className="w-full p-10">
         //   <div className="max-w-2xl mx-auto">
 
