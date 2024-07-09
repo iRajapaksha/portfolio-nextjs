@@ -4,13 +4,14 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         oswald: ["var(--font-oswald)"],
-        pixel: ["var(--font-pixel)"]
+        pixel: ["var(--font-pixel)"],
       },
       screens: { xs: "520px", "2xl": "1400px" },
       colors: {
@@ -36,12 +37,12 @@ const config: Config = {
         border: "rgb(255 255 255 / 0.05)",
       },
       backgroundImage: {
-        grain:"url(/assets/images/noisy-background.png)"
+        grain: "url(/assets/images/noisy-background.png)",
       },
-      animation:{
-        "noisy-bg":"noise 1s steps(2) infinite"
+      animation: {
+        "noisy-bg": "noise 1s steps(2) infinite",
       },
-      keyframes:{
+      keyframes: {
         noise: {
           "0%": {
             transform: "translate3d(0, 9rem, 0)",
@@ -77,7 +78,7 @@ const config: Config = {
             transform: "translate3d(-7rem, 0, 0)",
           },
         },
-      }
+      },
     },
   },
   plugins: [],
