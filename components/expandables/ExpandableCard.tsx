@@ -24,6 +24,7 @@ function ExpandableCard() {
           onMouseEnter={()=> handleMouseEnter(i)}
           onMouseLeave={()=> handleMouseLeave()}
         >
+            
           <FeaturedCard
             active={i === hoverIndex}
             title={featured.title}
