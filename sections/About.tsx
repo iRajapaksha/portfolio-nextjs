@@ -1,4 +1,5 @@
 import MeCard from "@/components/card/MeCard";
+import ResumeCard from "@/components/card/Resume";
 import Heading from "@/components/heading/Heading";
 import Card from "@/components/ui/Card";
 import React from "react";
@@ -10,7 +11,7 @@ function AboutSection() {
       <div className="space-y-4 py-8">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <MeCard/>
-          <Card title="Resume">Resume</Card>
+          <ResumeCard/>
           <Card title="Background">Background</Card>
           <Card title="Gallery" className="2xl:hidden">
             Gallery
