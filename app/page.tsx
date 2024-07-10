@@ -23,8 +23,11 @@ export default function Home() {
       resolution={2048}
     >
       {(methods) => (
-        <FeaturedSection/>
-        // <LandingSection/>
+        <div className="pb-8">
+          <FeaturedSection/>
+           {/* <LandingSection/> */}
+
+        </div>
         // <div className="w-full p-10">
         //   <div className="max-w-2xl mx-auto">
 
