@@ -5,16 +5,16 @@ const featuredData = [
     video:"/assets/videos/BookMyShoot.mp4"
   },
   {
-    title: "BookMyShoot ",
+    title: "Expense manager ",
     tag: "March 2023",
     video:
-      "https://www.youtube.com/watch?v=6t3SSbdKOeo&ab_channel=IsharaRajapaksha",
+      "/assets/videos/Expense Manager.mp4",
   },
   {
-    title: "BookMyShoot ",
+    title: "No name ",
     tag: "May 2024",
     video:
-      "https://www.youtube.com/watch?v=6t3SSbdKOeo&ab_channel=IsharaRajapaksha",
+      "/assets/videos/BookMyShoot.mp4",
   },
 ];
 
