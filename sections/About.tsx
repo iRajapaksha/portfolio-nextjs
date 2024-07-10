@@ -3,6 +3,7 @@ import MeCard from "@/components/card/MeCard";
 import ResumeCard from "@/components/card/Resume";
 import Heading from "@/components/heading/Heading";
 import Card from "@/components/ui/Card";
+import Gallery from "@/components/ui/Gallery";
 import React from "react";
 
 function AboutSection() {
@@ -11,11 +12,11 @@ function AboutSection() {
       <Heading number="02" title1="About" title2="Me" />
       <div className="space-y-4 py-8">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
-          <MeCard/>
-          <ResumeCard/>
-          <BackgroundCard/>
+          <MeCard />
+          <ResumeCard />
+          <BackgroundCard />
           <Card title="Gallery" className="2xl:hidden">
-            Gallery
+            <Gallery />
           </Card>
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
@@ -29,9 +30,7 @@ function AboutSection() {
             <Card title="Education">Education</Card>
           </div>
           <div className="hidden 2xl:flex ">
-          <Card title="Gallery" className="2xl:hidden">
-            Gallery
-          </Card>
+            <Gallery />
           </div>
         </div>
       </div>
