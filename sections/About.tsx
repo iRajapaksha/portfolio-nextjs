@@ -1,3 +1,4 @@
+import BackgroundCard from "@/components/card/Background";
 import MeCard from "@/components/card/MeCard";
 import ResumeCard from "@/components/card/Resume";
 import Heading from "@/components/heading/Heading";
@@ -12,7 +13,7 @@ function AboutSection() {
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <MeCard/>
           <ResumeCard/>
-          <Card title="Background">Background</Card>
+          <BackgroundCard/>
           <Card title="Gallery" className="2xl:hidden">
             Gallery
           </Card>
