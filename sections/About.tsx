@@ -1,4 +1,5 @@
 import BackgroundCard from "@/components/card/Background";
+import ExperienceCard from "@/components/card/Experience";
 import MeCard from "@/components/card/MeCard";
 import ResumeCard from "@/components/card/Resume";
 import Heading from "@/components/heading/Heading";
@@ -26,7 +27,7 @@ function AboutSection() {
           </div>
           <div className="space-y-4">
             <Card title="Stack">Stack</Card>
-            <Card title="Experience">Experience</Card>
+            <ExperienceCard/>
             <Card title="Education">Education</Card>
           </div>
           <div className="hidden 2xl:flex ">
