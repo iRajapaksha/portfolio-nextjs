@@ -8,7 +8,7 @@ import Socials from "../ui/Socials";
 
 function ResumeCard() {
   return (
-    <Card className="md:h-full 2xl:h-fit">
+    <Card className="md:h-full ">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
         voluptas excepturi? Excepturi rem repellendus quod esse aut provident
