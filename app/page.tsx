@@ -15,6 +15,7 @@ import Header from "@/components/navigation/header/Header";
 import LandingSection from "@/sections/Landing";
 import FeaturedSection from "@/sections/Featured";
 import AboutSection from "@/sections/About";
+import ContactSection from "@/sections/Contact";
 export default function Home() {
   return (
     <WaterWaveWrapper
@@ -25,9 +26,12 @@ export default function Home() {
     >
       {(methods) => (
         <div className="pb-8">
-           {/* <LandingSection/>
-          <FeaturedSection/> */}
+          {/* 
+          <LandingSection/>
+          <FeaturedSection/>
           <AboutSection/>
+           */}
+          <ContactSection/>
 
         </div>
         // <div className="w-full p-10">
