@@ -7,7 +7,7 @@ const MainFeatured = featuredData[0];
 
 function FeaturedSection() {
   return (
-    <div className="pt-24 px-3 lg:px-8">
+    <div className="pt-24 px-3 lg:px-8" id="projects">
       {/**Heading */}
       <Heading number="01" title1="Project" title2="Demo" />
       {/**Main feature card */}
