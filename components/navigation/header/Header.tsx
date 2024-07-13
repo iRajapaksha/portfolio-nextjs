@@ -25,7 +25,7 @@ function Header() {
         <div className="text-3xl font-medium text-primary-foreground font-pixel" onClick={()=>scrollToSection('about')}>About</div>
         <div className="hidden md:inline">
         <MagneticWrapper className="w-[250px]">
-             <FancyButton text="Connect" icon={<FaArrowRight/>}/>
+             <FancyButton text="Connect" icon={<FaArrowRight/>} onClick={()=>scrollToSection('connect')}/>
             </MagneticWrapper>
         </div>
         

@@ -7,9 +7,9 @@ const MainFeatured = featuredData[0];
 
 function FeaturedSection() {
   return (
-    <div className="pt-24 px-3 lg:px-8" id="projects">
+    <div className="pt-0 px-3 lg:px-8" id="projects">
       {/**Heading */}
-      <Heading number="01" title1="Project" title2="Demo" />
+      <Heading number="01" title1="Projects"  />
       {/**Main feature card */}
       <FeaturedCard
         active

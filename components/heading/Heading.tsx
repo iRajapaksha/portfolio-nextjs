@@ -3,7 +3,7 @@ import React from 'react'
 interface Props{
     number:string,
     title1: string,
-    title2: string
+    title2?: string
 }
 function Heading({number,title1,title2}:Props) {
   return (
@@ -16,8 +16,8 @@ function Heading({number,title1,title2}:Props) {
     </div>
     {/**heading text wrapper */}
     <div className="flex flex-nowrap min-h-min overflow-hidden p-0 w-full font-oswald">
-        <p className='text-[17vw] lg:text-[12vw] leading-[100%] text-primary-foreground mr-3'>{title1}</p>
-        <p className='text-[17vw] lg:text-[12vw] leading-[100%] text-primary-foreground italic'>{title2}</p>
+        <p className='text-[9vw] lg:text-[6vw] leading-[100%] text-primary-foreground mr-3'>{title1}</p>
+        <p className='text-[9vw] lg:text-[6vw] leading-[100%] text-primary-foreground italic'>{title2}</p>
 
     </div>
     </div>

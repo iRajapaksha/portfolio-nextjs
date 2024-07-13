@@ -4,7 +4,7 @@ import Button from '../ui/Button'
 interface Props{
     title:string,
     text:string,
-    btnText:string,
+    btnText?:string,
     icon:ReactNode
 }
 function ContactCard({title,text,btnText,icon}:Props) {
@@ -20,7 +20,7 @@ function ContactCard({title,text,btnText,icon}:Props) {
             <div>
                 <h2 className='font-bold text-2xl'>{text}</h2>
             </div>
-            <Button className='!w-24'>{btnText}</Button>
+            {btnText && <Button className='!w-24'>{btnText}</Button>}
         </div>
     </div>
   )

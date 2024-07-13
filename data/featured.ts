@@ -14,7 +14,7 @@ const featuredData = [
     title: "No name ",
     tag: "May 2024",
     video:
-      "/assets/videos/BookMyShoot.mp4",
+      "/assets/videos/weather-forecast.mp4",
   },
 ];
 
