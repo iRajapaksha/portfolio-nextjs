@@ -7,7 +7,7 @@ import { galleryImages } from "@/data";
 import Image from "next/image";
 function Gallery() {
   return (
-    <div className="h-[550px] sm:h-[650px] md:h-full 2xl:h-[750px] w-full">
+    <div className="h-[400px] sm:h-[450px] md:h-full 2xl:h-full w-full">
       <Swiper
         modules={ [Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -17,7 +17,7 @@ function Gallery() {
         {
             galleryImages.map((img)=>(
                 <SwiperSlide key={img.id}>
-                    <Image src={img.img} alt="" className="object-cover w-full h-full object-left-top"/>
+                    <Image src={img.img} alt="" className="object-contain object-center w-full h-full object-left-top"/>
                 </SwiperSlide>
             ))
         }

@@ -11,13 +11,13 @@ function FeaturedSection() {
       {/**Heading */}
       <Heading number="01" title1="Projects"  />
       {/**Main feature card */}
-      <FeaturedCard
+      {/* <FeaturedCard
         active
         title={MainFeatured.title}
         tag={MainFeatured.tag}
         video={MainFeatured.video}
-    />
-    <div className="mt-24">
+    /> */}
+    <div className="mt-0">
         <ExpandableCard/>
     </div>
     </div>

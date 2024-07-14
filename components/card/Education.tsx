@@ -7,13 +7,13 @@ function EducationCard() {
     {
       date: "2021-2025",
       title: "Computer Engineering",
-      subtitle: "University of Ruhuna",
+      subtitle: "University, of, Ruhuna",
      
     },
     {
       date: "2009-2019",
       title: "A/L and O/L",
-      subtitle: "Ranabima Royal College",
+      subtitle: "Ranabima, Royal, College, Kandy",
 
     },
   ];

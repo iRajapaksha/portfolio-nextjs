@@ -1,6 +1,6 @@
-import Img1 from '@/public/assets/gallery/1.jpg'
-import Img2 from '@/public/assets/gallery/2.jpg'
-import Img3 from '@/public/assets/gallery/3.png'
+import Img1 from '@/public/assets/certifications/deep.png'
+import Img2 from '@/public/assets/certifications/express.png'
+import Img3 from '@/public/assets/certifications/nodejs.png'
 
 export const galleryImages =[
     {

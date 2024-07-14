@@ -5,15 +5,33 @@ import { Timeline, TimelineItem } from "../ui/Timeline";
 function CertificationCard() {
   const certificationData = [
     {
-      date: "2012-2020",
-      title: "Diploma in Information Technology",
-      subtitle: "ESOFT Metro Campus",
+      date: "2024",
+      title: "Node.js: Securing RESTful APIs",
+      subtitle: "LinkedIn",
      
     },
     {
-      date: "2019-2020",
+      date: "2024",
+      title: "Building RESTful APIs with Node.js and Express",
+      subtitle: "LinkedIn",
+     
+    },
+    {
+      date: "2024",
+      title: "Deep Learning: Getting Started",
+      subtitle: "LinkedIn",
+     
+    },
+    {
+      date: "2020",
+      title: "Diploma in Information Technology",
+      subtitle: "ESOFT, Metro, Campus",
+     
+    },
+    {
+      date: "2020",
       title: "Diploma in English",
-      subtitle: "ESOFT Metro Campus",
+      subtitle: "ESOFT, Metro, Campus",
 
     },
   ];

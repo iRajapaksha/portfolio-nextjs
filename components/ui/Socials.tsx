@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import React from 'react'
 import Button from "./Button";
@@ -22,13 +22,18 @@ export default Socials
 
 const socials=[
     {
+        icon:<FaLinkedin/>,
+        link:'www.linkedin.com/in/rajapaksha-ani',
+        username:'Ishara Rajapskaha'
+    },
+    {
         icon:<FaFacebook/>,
-        link:'www.facebook.com',
+        link:'https://www.facebook.com/nayanajith.ishara?mibextid=LQQJ4d',
         username:'Ishara Rajapaksha'
     },
     {
         icon:<FaInstagram/>,
-        link:'www.instagram.com',
+        link:'https://www.instagram.com/_ishaara_99?igsh=MWptdGJxbjBrenpnOQ%3D%3D&utm_source=qr',
         username:'ishara__99'
     },
 ]

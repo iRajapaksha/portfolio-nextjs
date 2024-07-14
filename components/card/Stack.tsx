@@ -5,7 +5,7 @@ import Tooltip from '../ui/Tooltip'
 
 function StackCard() {
   return (
-   <Card title='Technical Skills'>
+   <Card title='Technical Skills' className='md:h-full'>
     <div className="flex flex-col gap-6 mt-2">
         {
             stackData.map((skill,i)=>(

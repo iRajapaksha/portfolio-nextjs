@@ -12,13 +12,14 @@ import React from "react";
 
 function AboutSection() {
   return (
-    <div className="px-3 lg:px-8" id="about">
+    <div className="px-3 lg:px-8" id="about" >
       <Heading number="02" title1="About"  />
-      <div className="space-y-4 py-8">
+      <div className="space-y-4 py-2">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
-          <MeCard />
           <ResumeCard />
-          <BackgroundCard />
+          <StackCard/>
+          <MeCard />
+          {/* <BackgroundCard /> */}
           <Card title="Gallery" className="2xl:hidden">
             <Gallery />
           </Card>
@@ -28,11 +29,11 @@ function AboutSection() {
             {/* <Card title="Instructor">Instructor</Card> */}
             <CertificationCard/>
           </div>
-          <div className="space-y-4">
-            <StackCard/>
             <ExperienceCard/>
+          {/* <div className="space-y-4">
+            <StackCard/>
             <EducationCard/>
-          </div>
+          </div> */}
           <div className="hidden 2xl:flex ">
             <Gallery />
           </div>

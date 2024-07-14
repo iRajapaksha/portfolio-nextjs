@@ -11,7 +11,7 @@ const featuredData = [
       "/assets/videos/Expense Manager.mp4",
   },
   {
-    title: "No name ",
+    title: "Weather forecast App ",
     tag: "May 2024",
     video:
       "/assets/videos/weather-forecast.mp4",

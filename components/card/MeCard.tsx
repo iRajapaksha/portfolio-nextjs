@@ -22,7 +22,7 @@ function MeCard() {
           className="absolute top-0 left-0 bottom-0 right-0 h-full w-full object-cover "
         />
         {/**Tags */}
-        <div className="absolute top-[65%] space-y-2">
+        {/* <div className="absolute top-[65%] space-y-2">
           <Tag
             text="Hello, Wolrd"
             className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl"
@@ -31,7 +31,7 @@ function MeCard() {
             text="I am a Computer Engineer"
             className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl"
           />
-        </div>
+        </div> */}
       </div>
     </Card>
   );

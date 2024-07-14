@@ -49,7 +49,7 @@ export const TimelineItem = ({
             <p className="leading-6 font-medium text-sm">{title}</p>
           </div>
           {/**Subtitle */}
-          <div className="flex items-center gap-2 w-min">
+          <div className="flex flex-row items-center gap-2 w-min">
             {link ? (
               <Link href={link}>
                 <TimelineItemBody link={link} tag={tag} subtitle={subtitle} />
@@ -73,17 +73,24 @@ interface Body {
 }
 
 export const TimelineItemBody = ({ subtitle, tag, link }: Body) => {
-  return (
-    <div className="text-secondary-foreground flex items-center">
-      <p className="text-sm font-normal leading-6 mt-1">{subtitle}</p>
-      {link ? <FiArrowUpRight /> : null}
-      {tag ? (
-        <div className="ms-2 rounded-[20px] bg-white/5 py-0.5 px-1.5">
-          <p className="text-[10px] font-normal text-secondary-foreground">
-            {tag}
-          </p>
+    return (
+      <div className="text-secondary-foreground flex flex-row items-center">
+        <div className="flex flex-row space-x-2">
+          {subtitle.split(',').map((item, index) => (
+            <p key={index} className="text-sm font-normal leading-6 mt-1">
+              {item}
+            </p>
+          ))}
         </div>
-      ) : null}
-    </div>
-  );
-};
+        {link && <FiArrowUpRight />}
+        {tag && (
+          <div className="ms-2 rounded-[20px] bg-white/5 py-0.5 px-1.5">
+            <p className="text-[10px] font-normal text-secondary-foreground">
+              {tag}
+            </p>
+          </div>
+        )}
+      </div>
+    );
+  };
+  
