@@ -9,6 +9,20 @@ import MagneticWrapper from "../visualEffects/magnetic-wrapper";
 import FancyButton from "../ui/FancyButton";
 
 function ResumeCard() {
+  const downloadResume = ()=>{
+      // Path to resume file 
+      const resumePath = '/assets/resume.pdf';
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = resumePath;
+      link.download = 'resume.pdf'; // You can change the downloaded file name here
+      // Append the link to the body
+      document.body.appendChild(link);
+      // Programmatically click the link to trigger the download
+      link.click();
+      // Remove the link after the download is triggered
+      document.body.removeChild(link);
+  }
   return (
     <Card className="md:h-full " title="Background">
       <p className="font-sans">
@@ -33,7 +47,7 @@ function ResumeCard() {
         {/**Socials */}
         <Socials />
         <MagneticWrapper>
-            <FancyButton text='Resume' icon={<FaDownload/>}/>
+            <FancyButton text='Resume' icon={<FaDownload/>} onClick={downloadResume}/>
         </MagneticWrapper>
         {/* <Button>
           <FaDownload />

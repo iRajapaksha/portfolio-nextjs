@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 interface Props {
   text: string;
   icon: ReactNode;
-  onClick?:()=>void
+  onClick:()=>void
 }
 
 function FancyButton({text,icon,onClick}:Props) {
