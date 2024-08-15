@@ -17,11 +17,13 @@ function ContactSection() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
-      .sendForm("sserviceid", "templateid", formRef.current, "public key")
+      .sendForm("service_bzlq9g9", "template_79951gr", formRef.current, "qPElWq1qsAJyJ-uu0")
       .then(
         (res) => {
           console.log(res.text);
           console.log("Email Sent Successfully");
+          alert('Email Sent Successfully')
+          formRef.current.reset(); // Clear the inputs after successful email sending
         },
         (error) => {
           console.log(error.text);
@@ -54,13 +56,13 @@ function ContactSection() {
           >
             <div className="flex flex-col lg:flex-row items-center justify-between mb-4 gap-8  ">
               <Input
-                name="name"
+                name="user_name"
                 type="text"
                 placeholder="Name"
                 icon={<FaUser />}
               />
               <Input
-                name="email"
+                name="user_email"
                 type="email"
                 placeholder="Email Address"
                 icon={<MdEmail />}
