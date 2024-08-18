@@ -1,10 +1,16 @@
 "use client";
-import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
+//import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 import Header from "@/components/navigation/header/Header";
 import LandingSection from "@/sections/Landing";
 import FeaturedSection from "@/sections/Featured";
 import AboutSection from "@/sections/About";
 import ContactSection from "@/sections/Contact";
+import dynamic from "next/dynamic";
+
+const WaterWaveWrapper =  dynamic(
+  ()=> import("@/components/visualEffects/water-wave-wrapper"),
+  {ssr:false}
+);
 
 
 export default function Home() {
@@ -15,7 +21,7 @@ export default function Home() {
       perturbance={3}
       resolution={2048}
     >
-      {(methods) => (
+      {() => (
         <div className="pb-8 px-3 ">
          <Header/>
           <LandingSection/>
